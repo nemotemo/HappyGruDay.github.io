@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+html, body, .container {
+  height: 100%;
+  font-family: 'Kaushan Script','Sail', cursive;
+}
+
+body {
+  background: #e74;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #190e14, #0d0d4b 30%, #c76075 80%, #e9b64b 95%);
+  background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
+}
+
+div#beach,
+canvas#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div#beach {
+  background-image:url(modified_beachsil2.png);
+  /* background-size: cover; */
+  background-position: bottom right;
+  background-size: 1700px;
+  background-repeat: no-repeat;
+}
+
+
+#people {
+  position: absolute;
+  bottom: 65px;
+  left: 40px;
+  width: 140px;
+}
+
+
+div#sea {
+  background-color: blue;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: radial-gradient(circle at center top, #23485a, #0d0246);
+}
+
+.icons {
+  position: absolute;
+  left: 10px;
+  /*top:50%;
+  width: 100%;*/
+  height: auto;
+  /*transform: translateY(10px) rotate(0deg);*/
+}
+.icons .row {
+  width: 100%;
+  text-align: center;
+}
+.icons .row span {
+  color: #e5e5e5;
+  text-shadow: 4px 4px 0 rgba(96, 125, 139, 0.4);
+  font-size: 50px;
+  display: inline-block;
+  opacity: 1;
+  transition: transform 0.5s ease-in, opacity 0.7s;
+  color: #c6e2ff;
+  animation: neon .08s ease-in-out infinite alternate;
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+  }
+}
+
+
+.moon {
+  position: absolute;
+  top: 10%;
+  right: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: inset 20px -10px 0 0 #b9b9b9;
+}
+
+.moon .crater1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow: inset -3px 1.5px 0 0 #aaa;
+  top: 20px;
+  right: 20px;
+}
+
+.moon .crater2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow: inset -1px 0.5px 0 0 #aaa;
+  top: 45px;
+  right: 50px;
+}
+
+.moon .crater3 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow: inset -1.5px 0.75px 0 0 #aaa;
+  top: 60px;
+  right: 25px;
+}
+
+@media (min-width: 1000px) {
+  .icons {
+    left: 40%;
+  }
+
+  .icons .row span {
+    font-size: 56px;
+  }
+
+  #people {
+    left: 80px;
+    bottom: 50px;
+    width: 160px;
+    background-image: none;
+  }
+
+  div#beach {
+    background-size: 2000px;
+  }
+
+
+  .moon {
+    right: 230px;
+  }
+
+        
+    }    
+    
+}
+
